@@ -1,5 +1,5 @@
 import '../styles/main.css';
-import { createTabs } from './components/tabs';
+import createTabs from './components/tabs';
 
 (function init() {
   const content = document.getElementById('content');
