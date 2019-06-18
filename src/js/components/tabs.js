@@ -1,11 +1,12 @@
 import { renderPage, changeTabsPage } from '../util'
 
-const createTabs = (id, items) => {
+export default function createTabs(id, items) {
   const tabs = document.createElement('div');
   tabs.setAttribute('id', id);
   tabs.setAttribute('class', 'tabs');
   const tabsLinks = document.createElement('div');
   tabsLinks.setAttribute('class', 'tabs-items');
+
   for(let i = 0; i < items.length; i++) {
     const link = document.createElement('div');
     link.setAttribute('class', 'tabs-item');
@@ -22,5 +23,3 @@ const createTabs = (id, items) => {
   tabs.appendChild(tabsBody);
   return tabs;
 }
-
-export { createTabs }
